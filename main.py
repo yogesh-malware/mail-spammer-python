@@ -7,7 +7,7 @@ passward = os.environ.get("passward")
 receiver = os.environ.get("receiver")
 subject = os.environ.get("subject")
 body = os.environ.get("body")
-spamcount = os.environ.get("count")
+spamcount = int(os.environ.get("count"))
 
 server = smtplib.SMTP('smtp.gmail.com',587)
 print("tls handshaking")
